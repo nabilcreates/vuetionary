@@ -13,7 +13,7 @@ var app = new Vue({
 
     methods: {
         getMeaning(word){
-            fetch("http://api.wordnik.com/v4/word.json/" + word + "/definitions?api_key=" + api_key)
+            fetch("https://api.wordnik.com/v4/word.json/" + word + "/definitions?api_key=" + api_key)
             .then(response => response.json())
             .then(json => {
                 console.log(json)
