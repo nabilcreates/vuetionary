@@ -20,6 +20,10 @@ var app = new Vue({
                 this.data = json
             })
         }
+    },
+
+    mounted(){
+        this.getMeaning('cry')
     }
     
 })
