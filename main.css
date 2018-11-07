@@ -1,9 +1,59 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600,700');
 
-body{
+body {
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
-h2{
+h1 {
     font-weight: 700;
+    color: #323E4F;
+}
+
+p {
+    color: #3d4d68;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+body,
+#meaning {
+    margin-top: 50px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+body {
+    background: #1C2532;
+    color: white;
+}
+
+small {
+    color: #323E4F;
+}
+
+/* INPUT */
+input {
+    width: 100%;
+    padding: 10px 0;
+    background: #1C2532;
+    border: 0;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+input::placeholder {
+    color: #323E4F;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+input:focus {
+    background: rgb(21, 28, 37);
+    color: #323E4F;
 }

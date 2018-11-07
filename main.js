@@ -22,8 +22,4 @@ var app = new Vue({
         }
     },
 
-    mounted(){
-        this.getMeaning('cry')
-    }
-    
 })

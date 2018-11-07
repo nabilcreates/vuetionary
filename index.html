@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Vuetionary</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
@@ -15,17 +15,21 @@
     <div class="app">
 
         <div class="container">
-            <input type="text" v-model='word' class="form-control" placeholder="Enter Word...">
+            <input type="text" v-model='word' placeholder="Enter Word...">
             <button @click='getMeaning(word)' class="btn btn-primary btn-block">Get Meaning</button>
 
-            <div class="row">
-                <div class="col-sm-6" id="meaning" v-for="item in data">
+            <hr>
+
+            <!-- DISPLAY -->
+            <div class="row" id="meaning">
+                <div class="col-sm-6" v-for="item in data">
+                    <p>{{item.word.toUpperCase()}}</p>
                     <h2>{{item.text}}</h2>
                     <p>{{item.partOfSpeech}}</p>
                     <small>{{item.attributionText}}</small>
 
                     <hr>
-                    
+
                 </div>
             </div>
         </div>
